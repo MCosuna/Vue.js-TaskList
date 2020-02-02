@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon"
+    href="https://banner2.cleanpng.com/20180508/wbe/kisspng-computer-icons-task-management-virtual-assistant-s-5af1f8f3d22c27.7331693915258073478609.jpg">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://unpkg.com/vue-nav-tabs/dist/vue-tabs.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <title>proyecto vue</title>
+</head>
+
+<body class="bg-dark">
+    </div> 
+<div class="container">
+  <!-- built files will be auto injected -->
+  <div class="bg-dark text-light">
+    <br>
+    <h1>
+      <i class="fab fa-vuejs"></i> Proyecto Vue.js - Mari Carmen Osuna Ojeda </h1> 
+    <br>
+    <br>
+  </div>
+    <div id="app">
+      <tasks></tasks>
+    </div>
+    <template id='tasks-template'>
+        <input type="text" placeholder='New task' v-model='newTask' @keyup.enter='addNewTask'></div>
+        <p v-show='!tasks.length'>No tasks!</p>
+        <task-list :tasks='tasks'></task-list>     
+    </template>
+    <div id="footer">
+      <div class="bg-dark" id="contenidoF">
+          <p>Desarrollado por Maria del carmen osuna</p>
+          <h6 style="margin:-0.5% 0;">Puedes consultar mi código en: 
+            <font-awesome-icon icon="chart-bar" style="height:13px;"></font-awesome-icon>
+               <a target=”_blank” href="link a github mc">
+                <i class="fab fa-github"></i>GitHub
+              </a>
+          </h6>
+      </div>
+  </div>
+
+  </div>
+  <style>
+    body{
+      background-color: black;
+    }
+    #footer{
+        height: 80px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    #contenidoF{
+        padding: 35px 0;
+        font-size: 0.8em;
+    }
+</style>
+</body>
+
+</html>
